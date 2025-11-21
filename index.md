@@ -5,8 +5,8 @@ I am a technical writer with over 5 years of software documentation experience i
 # Contact
 
 - Mobile: +91 9513681888
-- Email: vidwanreddy.p@gmail.com
-- LinkedIn: https://www.linkedin.com/in/vidwan-reddy/
+- vidwanreddy.p@gmail.com
+- (Linkedin)[https://www.linkedin.com/in/vidwan-reddy/]
 
 # Tools
 
