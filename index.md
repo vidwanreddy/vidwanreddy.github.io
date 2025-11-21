@@ -2,7 +2,7 @@
 
 I am a technical writer with over 5 years of software documentation experience in a docs-as-code environment. I collaborate with engineering, product, and UX to deliver clear API, product, developer, and support docs. I take initiative to improve workflows and build lightweight automation tools that streamline authoring, review, and publishing.
 
-## Contact
+# Contact
 
 - Mobile: +91 9513681888
 - Email: vidwanreddy.p@gmail.com
