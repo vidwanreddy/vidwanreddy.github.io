@@ -18,9 +18,9 @@ I am a technical writer with over 5 years of software documentation experience i
 
 # Experience
 
-**Amdocs** – Technical Publications Professional (September 2023 - Present)
+**Technical Publications Professional**, _Amdocs_, September 2023 - Present
 
-**Zeta** – Information Developer (May 2022 - September 2023)
+**Information Developer**, _Zeta_, May 2022 - September 2023
 
 - A key member of the information development team that is creating credit product documentation.
 - Create and maintain technical documentation for software products in a 'docs as code' environment.
@@ -33,7 +33,7 @@ I am a technical writer with over 5 years of software documentation experience i
 - Work on Bitbucket to implement version control for docs, allowing for easy tracking of changes.
 - Conduct regular reviews and updated existing documentation to ensure accuracy and relevance.
 
-**Finastra** – Technical Writer (December 2020 - May 2022)
+**Technical Writer**, _Finastra_, December 2020 - May 2022
 
 - I was the single point of contact for documentation for a treasury and capital markets product.
 - A key member of the product management team.
@@ -43,16 +43,16 @@ I am a technical writer with over 5 years of software documentation experience i
 - Created application folders and managed content internally and on the documentation portal.
 - Pair content with relevant images or illustrations to help increase readability and understanding.
 
-**Travel Bulletin, Alain Charles Publishing** – Online Editor (August 2018 - March 2020)
+**Online Editor**, *Travel Bulletin, Alain Charles Publishing*, August 2018 - March 2020
 
-Wrote and edited B2B travel news for the UK market.
-Wrote weekly features and interviewed industry leaders.
-Collaborated with the London team to devise editorial strategies.
-Maintained and monitored the live site.
-Proofread marketing letters and brochures
-Worked on Intelligent Flatplan and gave leads to the sales team.
+- Wrote and edited B2B travel news for the UK market.
+- Wrote weekly features and interviewed industry leaders.
+- Collaborated with the London team to devise editorial strategies.
+- Maintained and monitored the live site.
+- Proofread marketing letters and brochures
+- Worked on Intelligent Flatplan and gave leads to the sales team.
 
-**International Business Times, Newsweek Media Group** – Senior Sub-Editor (May 2017 - July 2018)
+**Senior Sub-Editor**, *International Business Times, Newsweek Media Group*, May 2017 - July 2018
 
 - Edited news copies for the fast-paced online desk.
 - Curated news for the website's home page.
@@ -60,7 +60,7 @@ Worked on Intelligent Flatplan and gave leads to the sales team.
 - Ensured content met Newsweek's standards.
 - Mentored reporters and sub-editors and updated style guides as per the latest standards.
 
-**The Hans India** – Sub-Editor (July 2015 - Oct 2016)
+**Sub-Editor**, *The Hans India*, July 2015 - Oct 2016
 
 - Edited news sent by district and city reporters across Telangana.
 - Designed page layouts working alongside designers.
@@ -68,5 +68,5 @@ Worked on Intelligent Flatplan and gave leads to the sales team.
 
 # Education
 
-- M.Sc. Electronic Media, 2013-2015  – Pondicherry University
-- B.A. Mass Communication, 2010-2013– Osmania University
+- **M.Sc. Electronic Media**, Pondicherry University – 2013-2015 
+- **B.A. Mass Communication**, Osmania University – 2010-2013 
