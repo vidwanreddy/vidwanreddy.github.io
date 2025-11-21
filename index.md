@@ -1,10 +1,7 @@
-# Vidwan Reddy
-Technical Publications Professional | Pune, India
-
-## About Me
+# About Me
 Brief intro about your experience and expertise.
 
-## Tools
+# Tools
 
 - Authoring and publishing tools: VS Code, MS Word, Madcap Flare, Hugo
 - Design and video tools: SnagIt, Microsoft Clipchamp, MS Visio, Adobe Photoshop, Adobe InDesign
@@ -16,7 +13,8 @@ Brief intro about your experience and expertise.
 - API Documentation
 - Content Strategy
 
-## Experience
+# Experience
+
 **Zeta** – Information Developer (May 2022 - September 2023)
 
 - A key member of the information development team that is creating credit product documentation.
@@ -30,12 +28,12 @@ Brief intro about your experience and expertise.
 - Work on Bitbucket to implement version control for docs, allowing for easy tracking of changes.
 - Conduct regular reviews and updated existing documentation to ensure accuracy and relevance.
 
-## Education
+# Education
 
-M.Sc. Electronic Media, 2013-2015  – Pondicherry University 
-
-B.A. Mass Communication, 2010-2013– Osmania University 
+- M.Sc. Electronic Media, 2013-2015  – Pondicherry University 
+- B.A. Mass Communication, 2010-2013– Osmania University 
 
 ## Contact
 
-Email: vidwanreddy.p@gmail.com | LinkedIn: https://www.linkedin.com/in/vidwan-reddy/
+- Email: vidwanreddy.p@gmail.com 
+- LinkedIn: https://www.linkedin.com/in/vidwan-reddy/
