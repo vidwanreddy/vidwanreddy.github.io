@@ -6,11 +6,11 @@ Brief intro about your experience and expertise.
 
 ## Tools
 
-Authoring and publishing tools: VS Code, MS Word, Madcap Flare, Hugo
-Design and video tools: SnagIt, Microsoft Clipchamp, MS Visio, Adobe Photoshop, Adobe InDesign
-CMS and ticketing tools: Confluence, Jira, Bitbucket, Microsoft SharePoint 
-Collaboration tools: Microsoft Teams, Zoom, Slack, Flock
-Languages: HTML, Markdown, CSS
+- Authoring and publishing tools: VS Code, MS Word, Madcap Flare, Hugo
+- Design and video tools: SnagIt, Microsoft Clipchamp, MS Visio, Adobe Photoshop, Adobe InDesign
+- CMS and ticketing tools: Confluence, Jira, Bitbucket, Microsoft SharePoint 
+- Collaboration tools: Microsoft Teams, Zoom, Slack, Flock
+- Languages: HTML, Markdown, CSS
 
 - Technical Writing
 - API Documentation
