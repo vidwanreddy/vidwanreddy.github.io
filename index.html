@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidwan Reddy – Technical Writer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #0a0a0a;
+            --dark-gray: #2a2a2a;
+            --medium-gray: #666666;
+            --light-gray: #e8e8e8;
+            --white: #fafafa;
+            --accent: #1a1a1a;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Libre Franklin', -apple-system, sans-serif;
+            font-weight: 300;
+            line-height: 1.7;
+            color: var(--black);
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--black);
+            margin-bottom: 3rem;
+        }
+
+        .name {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            color: var(--black);
+        }
+
+        .title {
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--medium-gray);
+        }
+
+        /* Contact Bar */
+        .contact-bar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .contact-bar a {
+            color: var(--black);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .contact-bar a:hover {
+            border-bottom-color: var(--black);
+        }
+
+        .contact-bar span {
+            color: var(--light-gray);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--black);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        /* About */
+        .about p {
+            font-size: 1rem;
+            line-height: 1.9;
+            color: var(--dark-gray);
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 2.5rem;
+        }
+
+        .job:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .job-title {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--black);
+        }
+
+        .job-company {
+            font-style: italic;
+            color: var(--medium-gray);
+        }
+
+        .job-dates {
+            font-size: 0.8rem;
+            color: var(--medium-gray);
+            letter-spacing: 0.05em;
+        }
+
+        .job ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .job li {
+            position: relative;
+            padding-left: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+        }
+
+        .job li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: var(--light-gray);
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category h3 {
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--medium-gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-category p {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 1rem;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .degree {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--black);
+        }
+
+        .university {
+            font-size: 0.9rem;
+            color: var(--medium-gray);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--black);
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--medium-gray);
+            letter-spacing: 0.1em;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+                font-size: 11pt;
+            }
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+            section {
+                break-inside: avoid;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+            .name {
+                font-size: 2rem;
+                letter-spacing: 0.1em;
+            }
+            .contact-bar {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .contact-bar span {
+                display: none;
+            }
+            .job-header {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="name">Vidwan Reddy</h1>
+            <p class="title">Technical Writer</p>
+            <div class="contact-bar">
+                <span>·</span>
+                <a href="mailto:vidwanreddy.p@gmail.com">vidwanreddy.p@gmail.com</a>
+                <span>·</span>
+                <a href="tel:+919513681888">+91 9513681888</a>
+                <span>·</span>
+                <a href="https://www.linkedin.com/in/vidwan-reddy/" target="_blank" rel="noopener">LinkedIn</a>
+                <span>·</span>
+            </div>
+        </header>
+
+        <section class="about">
+            <h2>About</h2>
+            <p>I am a technical writer with over 5 years of software documentation experience in a docs-as-code environment. I collaborate with engineering, product, and UX to deliver clear API, product, developer, and support docs. I take initiative to improve workflows and build lightweight automation tools that streamline authoring, review, and publishing.</p>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+
+            <article class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Technical Publications Professional</span>
+                        <span class="job-company">— Amdocs</span>
+                    </div>
+                    <span class="job-dates">September 2023 – Present</span>
+                </div>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Information Developer</span>
+                        <span class="job-company">— Zeta</span>
+                    </div>
+                    <span class="job-dates">May 2022 – September 2023</span>
+                </div>
+                <ul>
+                    <li>Key member of the information development team creating credit product documentation</li>
+                    <li>Created and maintained technical documentation for software products in a docs-as-code environment</li>
+                    <li>Developed Support Center docs, API reference guides, and release notes</li>
+                    <li>Participated in user testing of HDFC PayZapp 2.0 and provided usability feedback</li>
+                    <li>Collaborated with UI/UX teams to customize content for India and US markets</li>
+                    <li>Built comprehensive documentation for Rewards Center from scratch</li>
+                    <li>Implemented version control for docs using Bitbucket</li>
+                </ul>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Technical Writer</span>
+                        <span class="job-company">— Finastra</span>
+                    </div>
+                    <span class="job-dates">December 2020 – May 2022</span>
+                </div>
+                <ul>
+                    <li>Single point of contact for documentation for a treasury and capital markets product</li>
+                    <li>Key member of the product management team</li>
+                    <li>Wrote, edited, and reviewed technical information to build various deliverables</li>
+                    <li>Sourced information from business analysts and developers; conducted review meetings</li>
+                    <li>Attended scrum and scrum-of-scrum meets to discuss documentation deadlines</li>
+                </ul>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Online Editor</span>
+                        <span class="job-company">— Travel Bulletin, Alain Charles Publishing</span>
+                    </div>
+                    <span class="job-dates">August 2018 – March 2020</span>
+                </div>
+                <ul>
+                    <li>Wrote and edited B2B travel news for the UK market</li>
+                    <li>Wrote weekly features and interviewed industry leaders</li>
+                    <li>Collaborated with London team to devise editorial strategies</li>
+                </ul>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Senior Sub-Editor</span>
+                        <span class="job-company">— International Business Times, Newsweek Media Group</span>
+                    </div>
+                    <span class="job-dates">May 2017 – July 2018</span>
+                </div>
+                <ul>
+                    <li>Edited news copies for the fast-paced online desk</li>
+                    <li>Curated news for the website's home page</li>
+                    <li>Mentored reporters and sub-editors; updated style guides</li>
+                </ul>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Sub-Editor</span>
+                        <span class="job-company">— The Hans India</span>
+                    </div>
+                    <span class="job-dates">July 2015 – October 2016</span>
+                </div>
+                <ul>
+                    <li>Edited news from district and city reporters across Telangana</li>
+                    <li>Designed page layouts alongside designers</li>
+                    <li>Held independent charge of Hyderabad, Nizamabad, and Warangal editions</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="skills">
+            <h2>Tools & Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Authoring & Publishing</h3>
+                    <p>VS Code, MS Word, Madcap Flare, Hugo</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Design & Video</h3>
+                    <p>SnagIt, Microsoft Clipchamp, MS Visio, Adobe Photoshop, Adobe InDesign</p>
+                </div>
+                <div class="skill-category">
+                    <h3>CMS & Ticketing</h3>
+                    <p>Confluence, Jira, Bitbucket, Microsoft SharePoint</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>HTML, Markdown, CSS</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <p class="degree">M.Sc. Electronic Media</p>
+                <p class="university">Pondicherry University, 2013–2015</p>
+            </div>
+            <div class="education-item">
+                <p class="degree">B.A. Mass Communication</p>
+                <p class="university">Osmania University, 2010–2013</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>References available upon request</p>
+        </footer>
+    </div>
+</body>
+</html>
+
