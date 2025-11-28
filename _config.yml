@@ -1,2 +1,6 @@
-theme: jekyll-theme-minimal
 title: Vidwan Reddy
+description: Technical Writer
+
+# Disable Jekyll processing for pure HTML
+include:
+  - index.html
