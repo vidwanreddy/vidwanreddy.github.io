@@ -21,7 +21,6 @@
             --paper: #f4f1e8;
             --paper-dark: #e8e4d8;
             --paper-edge: #d4cfc0;
-            --red-ink: #8b3a3a;
         }
 
         @keyframes typewriter-blink {
@@ -79,22 +78,6 @@
             animation: fade-in 0.8s ease-out;
         }
 
-        /* Typewriter paper edge effect */
-        .container::before {
-            content: '';
-            position: absolute;
-            left: 60px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: linear-gradient(to bottom,
-                transparent 0%,
-                var(--red-ink) 5%,
-                var(--red-ink) 95%,
-                transparent 100%
-            );
-            opacity: 0.3;
-        }
 
         /* Header */
         header {
@@ -161,7 +144,7 @@
 
         .contact-bar a:hover {
             border-bottom-style: solid;
-            color: var(--red-ink);
+            color: var(--ink-faded);
         }
 
         .contact-bar .separator {
@@ -342,23 +325,6 @@
             font-style: italic;
         }
 
-        /* Footer */
-        footer {
-            margin-top: 3rem;
-            padding-top: 1.5rem;
-            text-align: center;
-            font-size: 0.75rem;
-            color: var(--ink-light);
-            letter-spacing: 0.15em;
-        }
-
-        footer::before {
-            content: '— END OF DOCUMENT —';
-            display: block;
-            margin-bottom: 1rem;
-            letter-spacing: 0.3em;
-            font-family: 'Special Elite', monospace;
-        }
 
         /* Print styles */
         @media print {
@@ -373,9 +339,6 @@
                 max-width: 100%;
                 padding: 0;
             }
-            .container::before {
-                display: none;
-            }
             section {
                 break-inside: avoid;
                 animation: none;
@@ -389,9 +352,6 @@
         @media (max-width: 600px) {
             .container {
                 padding: 2rem 1.5rem;
-            }
-            .container::before {
-                display: none;
             }
             .name {
                 font-size: 1.8rem;
@@ -562,8 +522,6 @@
                 <p class="university">Osmania University, 2010–2013</p>
             </div>
         </section>
-
-        <footer></footer>
     </div>
 </body>
 </html>
