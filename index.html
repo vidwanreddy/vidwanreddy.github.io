@@ -6,7 +6,7 @@
     <title>Vidwan Reddy – Technical Writer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after {
             margin: 0;
@@ -15,12 +15,23 @@
         }
 
         :root {
-            --black: #0a0a0a;
-            --dark-gray: #2a2a2a;
-            --medium-gray: #666666;
-            --light-gray: #e8e8e8;
-            --white: #fafafa;
-            --accent: #1a1a1a;
+            --ink: #2c2416;
+            --ink-faded: #5c4d3a;
+            --ink-light: #8a7a62;
+            --paper: #f4f1e8;
+            --paper-dark: #e8e4d8;
+            --paper-edge: #d4cfc0;
+            --red-ink: #8b3a3a;
+        }
+
+        @keyframes typewriter-blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         html {
@@ -28,46 +39,106 @@
         }
 
         body {
-            font-family: 'Libre Franklin', -apple-system, sans-serif;
-            font-weight: 300;
-            line-height: 1.7;
-            color: var(--black);
-            background-color: var(--white);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+            font-weight: 400;
+            line-height: 1.8;
+            color: var(--ink);
+            background:
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 27px,
+                    rgba(0,0,0,0.02) 27px,
+                    rgba(0,0,0,0.02) 28px
+                ),
+                linear-gradient(135deg, #f7f4eb 0%, #f4f1e8 50%, #efe9dc 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            -webkit-font-smoothing: auto;
+        }
+
+        /* Paper texture overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1000;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
-            padding: 4rem 2rem;
+            padding: 3rem 2.5rem;
+            position: relative;
+            animation: fade-in 0.8s ease-out;
+        }
+
+        /* Typewriter paper edge effect */
+        .container::before {
+            content: '';
+            position: absolute;
+            left: 60px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom,
+                transparent 0%,
+                var(--red-ink) 5%,
+                var(--red-ink) 95%,
+                transparent 100%
+            );
+            opacity: 0.3;
         }
 
         /* Header */
         header {
             text-align: center;
-            padding-bottom: 3rem;
-            border-bottom: 1px solid var(--black);
-            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        header::after {
+            content: '~ ~ ~';
+            display: block;
+            margin-top: 2rem;
+            color: var(--ink-light);
+            letter-spacing: 0.5em;
         }
 
         .name {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-size: 3rem;
+            font-family: 'Special Elite', 'Courier New', monospace;
+            font-size: 2.5rem;
             font-weight: 400;
-            letter-spacing: 0.15em;
+            letter-spacing: 0.08em;
             text-transform: uppercase;
-            margin-bottom: 0.5rem;
-            color: var(--black);
+            margin-bottom: 0.75rem;
+            color: var(--ink);
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.05);
         }
 
         .title {
-            font-family: 'Libre Franklin', sans-serif;
-            font-size: 0.85rem;
+            font-family: 'Courier Prime', monospace;
+            font-size: 1rem;
             font-weight: 400;
-            letter-spacing: 0.3em;
+            letter-spacing: 0.25em;
             text-transform: uppercase;
-            color: var(--medium-gray);
+            color: var(--ink-faded);
+            position: relative;
+            display: inline-block;
+        }
+
+        .title::after {
+            content: '▮';
+            animation: typewriter-blink 1s infinite;
+            margin-left: 0.25em;
+            color: var(--ink);
         }
 
         /* Contact Bar */
@@ -75,132 +146,183 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 1.5rem;
+            gap: 1rem;
             margin-top: 1.5rem;
             font-size: 0.85rem;
         }
 
         .contact-bar a {
-            color: var(--black);
+            color: var(--ink);
             text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.2s ease;
+            border-bottom: 1px dashed var(--ink-light);
+            padding-bottom: 2px;
+            transition: all 0.2s ease;
         }
 
         .contact-bar a:hover {
-            border-bottom-color: var(--black);
+            border-bottom-style: solid;
+            color: var(--red-ink);
         }
 
-        .contact-bar span {
-            color: var(--light-gray);
+        .contact-bar .separator {
+            color: var(--ink-light);
         }
 
         /* Sections */
         section {
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
+            animation: fade-in 0.6s ease-out both;
         }
 
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+
         h2 {
-            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-family: 'Special Elite', monospace;
             font-size: 1.1rem;
-            font-weight: 600;
-            letter-spacing: 0.2em;
+            font-weight: 400;
+            letter-spacing: 0.15em;
             text-transform: uppercase;
-            color: var(--black);
-            margin-bottom: 1.5rem;
+            color: var(--ink);
+            margin-bottom: 1.25rem;
             padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--light-gray);
+            border-bottom: 2px solid var(--ink);
+            display: inline-block;
+        }
+
+        h2::before {
+            content: '>> ';
+            color: var(--ink-light);
         }
 
         /* About */
         .about p {
-            font-size: 1rem;
-            line-height: 1.9;
-            color: var(--dark-gray);
+            font-size: 0.95rem;
+            line-height: 2;
+            color: var(--ink);
+            text-align: justify;
+            text-indent: 2em;
         }
 
         /* Experience */
         .job {
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--paper-edge);
         }
 
         .job:last-child {
             margin-bottom: 0;
         }
 
+        .job:hover {
+            border-left-color: var(--ink-light);
+        }
+
         .job-header {
+            margin-bottom: 0.75rem;
+        }
+
+        .job-title-line {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-bottom: 0.75rem;
         }
 
         .job-title {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-size: 1.15rem;
-            font-weight: 500;
-            color: var(--black);
-        }
-
-        .job-company {
-            font-style: italic;
-            color: var(--medium-gray);
+            font-family: 'Special Elite', monospace;
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--ink);
         }
 
         .job-dates {
-            font-size: 0.8rem;
-            color: var(--medium-gray);
+            font-family: 'Courier Prime', monospace;
+            font-size: 0.75rem;
+            color: var(--ink-faded);
             letter-spacing: 0.05em;
+            white-space: nowrap;
+        }
+
+        .job-company {
+            font-family: 'Courier Prime', monospace;
+            font-style: italic;
+            font-size: 0.9rem;
+            color: var(--ink-faded);
+            margin-top: 0.25rem;
         }
 
         .job ul {
             list-style: none;
             padding-left: 0;
+            margin-top: 0.75rem;
         }
 
         .job li {
             position: relative;
-            padding-left: 1rem;
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-            color: var(--dark-gray);
+            padding-left: 1.5rem;
+            margin-bottom: 0.4rem;
+            font-size: 0.85rem;
+            color: var(--ink);
+            line-height: 1.7;
         }
 
         .job li::before {
-            content: '—';
+            content: '*';
             position: absolute;
             left: 0;
-            color: var(--light-gray);
+            color: var(--ink-light);
+            font-weight: bold;
         }
 
         /* Skills */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
         }
 
+        .skill-category {
+            padding: 1rem;
+            background: rgba(255,255,255,0.4);
+            border: 1px dashed var(--paper-edge);
+        }
+
         .skill-category h3 {
-            font-family: 'Libre Franklin', sans-serif;
-            font-size: 0.75rem;
-            font-weight: 500;
-            letter-spacing: 0.15em;
+            font-family: 'Special Elite', monospace;
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
-            color: var(--medium-gray);
+            color: var(--ink-faded);
             margin-bottom: 0.5rem;
         }
 
+        .skill-category h3::before {
+            content: '[ ';
+            color: var(--ink-light);
+        }
+
+        .skill-category h3::after {
+            content: ' ]';
+            color: var(--ink-light);
+        }
+
         .skill-category p {
-            font-size: 0.9rem;
-            color: var(--dark-gray);
+            font-size: 0.85rem;
+            color: var(--ink);
             line-height: 1.6;
         }
 
         /* Education */
         .education-item {
             margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--paper-edge);
         }
 
         .education-item:last-child {
@@ -208,26 +330,34 @@
         }
 
         .degree {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-size: 1.05rem;
-            font-weight: 500;
-            color: var(--black);
+            font-family: 'Special Elite', monospace;
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: var(--ink);
         }
 
         .university {
-            font-size: 0.9rem;
-            color: var(--medium-gray);
+            font-size: 0.85rem;
+            color: var(--ink-faded);
+            font-style: italic;
         }
 
         /* Footer */
         footer {
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--black);
+            margin-top: 3rem;
+            padding-top: 1.5rem;
             text-align: center;
             font-size: 0.75rem;
-            color: var(--medium-gray);
-            letter-spacing: 0.1em;
+            color: var(--ink-light);
+            letter-spacing: 0.15em;
+        }
+
+        footer::before {
+            content: '— END OF DOCUMENT —';
+            display: block;
+            margin-bottom: 1rem;
+            letter-spacing: 0.3em;
+            font-family: 'Special Elite', monospace;
         }
 
         /* Print styles */
@@ -236,12 +366,22 @@
                 background: white;
                 font-size: 11pt;
             }
+            body::before {
+                display: none;
+            }
             .container {
                 max-width: 100%;
                 padding: 0;
             }
+            .container::before {
+                display: none;
+            }
             section {
                 break-inside: avoid;
+                animation: none;
+            }
+            .title::after {
+                display: none;
             }
         }
 
@@ -250,20 +390,27 @@
             .container {
                 padding: 2rem 1.5rem;
             }
+            .container::before {
+                display: none;
+            }
             .name {
-                font-size: 2rem;
-                letter-spacing: 0.1em;
+                font-size: 1.8rem;
+                letter-spacing: 0.05em;
             }
             .contact-bar {
                 flex-direction: column;
+                align-items: center;
                 gap: 0.5rem;
             }
-            .contact-bar span {
+            .contact-bar .separator {
                 display: none;
             }
-            .job-header {
+            .job-title-line {
                 flex-direction: column;
                 gap: 0.25rem;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -274,13 +421,11 @@
             <h1 class="name">Vidwan Reddy</h1>
             <p class="title">Technical Writer</p>
             <div class="contact-bar">
-                <span>·</span>
                 <a href="mailto:vidwanreddy.p@gmail.com">vidwanreddy.p@gmail.com</a>
-                <span>·</span>
+                <span class="separator">/</span>
                 <a href="tel:+919513681888">+91 9513681888</a>
-                <span>·</span>
+                <span class="separator">/</span>
                 <a href="https://www.linkedin.com/in/vidwan-reddy/" target="_blank" rel="noopener">LinkedIn</a>
-                <span>·</span>
             </div>
         </header>
 
@@ -294,21 +439,21 @@
 
             <article class="job">
                 <div class="job-header">
-                    <div>
+                    <div class="job-title-line">
                         <span class="job-title">Technical Publications Professional</span>
-                        <span class="job-company">— Amdocs</span>
+                        <span class="job-dates">September 2023 – Present</span>
                     </div>
-                    <span class="job-dates">September 2023 – Present</span>
+                    <p class="job-company">Amdocs</p>
                 </div>
             </article>
 
             <article class="job">
                 <div class="job-header">
-                    <div>
+                    <div class="job-title-line">
                         <span class="job-title">Information Developer</span>
-                        <span class="job-company">— Zeta</span>
+                        <span class="job-dates">May 2022 – September 2023</span>
                     </div>
-                    <span class="job-dates">May 2022 – September 2023</span>
+                    <p class="job-company">Zeta</p>
                 </div>
                 <ul>
                     <li>Key member of the information development team creating credit product documentation</li>
@@ -323,11 +468,11 @@
 
             <article class="job">
                 <div class="job-header">
-                    <div>
+                    <div class="job-title-line">
                         <span class="job-title">Technical Writer</span>
-                        <span class="job-company">— Finastra</span>
+                        <span class="job-dates">December 2020 – May 2022</span>
                     </div>
-                    <span class="job-dates">December 2020 – May 2022</span>
+                    <p class="job-company">Finastra</p>
                 </div>
                 <ul>
                     <li>Single point of contact for documentation for a treasury and capital markets product</li>
@@ -340,11 +485,11 @@
 
             <article class="job">
                 <div class="job-header">
-                    <div>
+                    <div class="job-title-line">
                         <span class="job-title">Online Editor</span>
-                        <span class="job-company">— Travel Bulletin, Alain Charles Publishing</span>
+                        <span class="job-dates">August 2018 – March 2020</span>
                     </div>
-                    <span class="job-dates">August 2018 – March 2020</span>
+                    <p class="job-company">Travel Bulletin, Alain Charles Publishing</p>
                 </div>
                 <ul>
                     <li>Wrote and edited B2B travel news for the UK market</li>
@@ -355,11 +500,11 @@
 
             <article class="job">
                 <div class="job-header">
-                    <div>
+                    <div class="job-title-line">
                         <span class="job-title">Senior Sub-Editor</span>
-                        <span class="job-company">— International Business Times, Newsweek Media Group</span>
+                        <span class="job-dates">May 2017 – July 2018</span>
                     </div>
-                    <span class="job-dates">May 2017 – July 2018</span>
+                    <p class="job-company">International Business Times, Newsweek Media Group</p>
                 </div>
                 <ul>
                     <li>Edited news copies for the fast-paced online desk</li>
@@ -370,11 +515,11 @@
 
             <article class="job">
                 <div class="job-header">
-                    <div>
+                    <div class="job-title-line">
                         <span class="job-title">Sub-Editor</span>
-                        <span class="job-company">— The Hans India</span>
+                        <span class="job-dates">July 2015 – October 2016</span>
                     </div>
-                    <span class="job-dates">July 2015 – October 2016</span>
+                    <p class="job-company">The Hans India</p>
                 </div>
                 <ul>
                     <li>Edited news from district and city reporters across Telangana</li>
@@ -418,10 +563,7 @@
             </div>
         </section>
 
-        <footer>
-            <p>References available upon request</p>
-        </footer>
+        <footer></footer>
     </div>
 </body>
 </html>
-
