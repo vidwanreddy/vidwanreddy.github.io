@@ -6,7 +6,7 @@ Write to me at vidwanreddy.p@gmail.com
 Call me on +91 9513681888
 [My LinkedIn Profile](https://www.linkedin.com/in/vidwan-reddy/)
 
----
+
 
 ## About
 
@@ -14,18 +14,18 @@ With over five years of experience in technical communication, I specialize in c
 
 At Amdocs, I focus on maintaining and improving technical documentation for MPDK and Observability products. Collaborating with cross-functional teams, I implement AI-assisted tools to accelerate content development while upholding quality. My role emphasizes fostering collaboration, standardizing technical guides, and aligning documentation with product goals to enhance user experiences and accelerate product adoption.
 
----
+
 
 ## Key Projects - AI Automation and Writing Workflow Innovations
-- Amdocs Linter — VS Code Extension: A Visual Studio Code extension that flags Markdown formatting issues per Amdocs style guidelines in real time and allows users to fix them using GitHub Copilot. 
+- _Amdocs Linter_ - VS Code Extension: A Visual Studio Code extension that flags Markdown formatting issues per Amdocs style guidelines in real time and allows users to fix them using GitHub Copilot. 
 
-- Capability Index Updater: A Flask-based web application with a responsive UI that identifies whether a capability is new, updated, or removed in a repository by parsing information across two other repositories. 
+- _Capability Index Updater_ - A Flask-based web application with a responsive UI that identifies whether a capability is new, updated, or removed in a repository by parsing information across two other repositories. 
 
-- File Renaming Tool: A Python-based utility that resolves a legacy issue of duplicate file and image names across folders by finding, renaming, and consolidating them into a flat hierarchy. 
+- _File Renaming Tool_ - A Python-based utility that resolves a legacy issue of duplicate file and image names across folders by finding, renaming, and consolidating them into a flat hierarchy. 
 
-- Cursor Agent Skills: A comprehensive set of Cursor agent skills that automate drafting of release notes and keep developer guides in sync with source code changes. 
+- _Cursor Agent Skills_ - A comprehensive set of Cursor agent skills that automate drafting of release notes and keep developer guides in sync with source code changes. 
 
----
+
 
 ## Experience
 
@@ -78,7 +78,6 @@ At Amdocs, I focus on maintaining and improving technical documentation for MPDK
 - Designed page layouts alongside designers
 - Held independent charge of Hyderabad, Nizamabad, and Warangal editions
 
----
 
 ## Tools & Skills
 
@@ -94,12 +93,8 @@ At Amdocs, I focus on maintaining and improving technical documentation for MPDK
 
 * Generative AI Tools: GitHub Copilot, Microsoft Copilot, Cursor, Lovable
 
----
 
 ## Education
 
-M.Sc. Electronic Media
-*Pondicherry University, 2013–2015*
-
-B.A. Mass Communication
-*Osmania University, 2010–2013*
+- M.Sc. Electronic Media, Pondicherry University, 2013–2015
+- B.A. Mass Communication, Osmania University, 2010–2013
