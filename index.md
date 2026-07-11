@@ -2,9 +2,7 @@
 layout: default
 ---
 
-**Technical Writer**
-
-vidwanreddy.p@gmail.com / +91 9513681888 / [LinkedIn](https://www.linkedin.com/in/vidwan-reddy/)
+vidwanreddy.p@gmail.com | +91 9513681888 | [LinkedIn](https://www.linkedin.com/in/vidwan-reddy/)
 
 ---
 
