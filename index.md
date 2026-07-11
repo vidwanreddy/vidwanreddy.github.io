@@ -2,13 +2,28 @@
 layout: default
 ---
 
-vidwanreddy.p@gmail.com | +91 9513681888 | [LinkedIn](https://www.linkedin.com/in/vidwan-reddy/)
+Write to me at vidwanreddy.p@gmail.com
+Call me on +91 9513681888
+[My LinkedIn Profile](https://www.linkedin.com/in/vidwan-reddy/)
 
 ---
 
 ## About
 
-I am a technical writer with over 5 years of software documentation experience in a docs-as-code environment. I collaborate with engineering, product, and UX to deliver clear API, product, developer, and support docs. I take initiative to improve workflows and build lightweight automation tools that streamline authoring, review, and publishing.
+With over five years of experience in technical communication, I specialize in creating high-quality developer documentation that empowers teams and drives product engagement. As a Technical Publications Professional at Amdocs, I contribute to the TechPubs team by leveraging AI-powered tools to streamline documentation workflows, enhance content consistency, and support the organization's mission of delivering cutting-edge technology solutions. My work is fueled by a commitment to clarity, efficiency, and innovation, ensuring that our documentation meets the evolving needs of developers and stakeholders.  
+
+At Amdocs, I focus on maintaining and improving technical documentation for MPDK and Observability products. Collaborating with cross-functional teams, I implement AI-assisted tools to accelerate content development while upholding quality. My role emphasizes fostering collaboration, standardizing technical guides, and aligning documentation with product goals to enhance user experiences and accelerate product adoption.
+
+---
+
+## Key Projects - AI Automation and Writing Workflow Innovations
+- Amdocs Linter — VS Code Extension: A Visual Studio Code extension that flags Markdown formatting issues per Amdocs style guidelines in real time and allows users to fix them using GitHub Copilot. 
+
+- Capability Index Updater: A Flask-based web application with a responsive UI that identifies whether a capability is new, updated, or removed in a repository by parsing information across two other repositories. 
+
+- File Renaming Tool: A Python-based utility that resolves a legacy issue of duplicate file and image names across folders by finding, renaming, and consolidating them into a flat hierarchy. 
+
+- Cursor Agent Skills: A comprehensive set of Cursor agent skills that automate drafting of release notes and keep developer guides in sync with source code changes. 
 
 ---
 
@@ -67,20 +82,24 @@ I am a technical writer with over 5 years of software documentation experience i
 
 ## Tools & Skills
 
-**Authoring & Publishing:** VS Code, MS Word, Madcap Flare, Hugo
+* Authoring & Publishing: VS Code, MS Word, Madcap Flare, Hugo
 
-**Design & Video:** SnagIt, Microsoft Clipchamp, MS Visio, Adobe Photoshop, Adobe InDesign
+* Design & Video: SnagIt, Microsoft Clipchamp, MS Visio, Adobe Photoshop, Adobe InDesign
 
-**CMS & Ticketing:** Confluence, Jira, Bitbucket, Microsoft SharePoint
+* CMS & Ticketing: Confluence, Jira, Bitbucket, Microsoft SharePoint
 
-**Languages:** HTML, Markdown, CSS
+* Languages: HTML, Markdown
+
+* Collaboration: Microsoft Teams, Zoom, Slack, Flock
+
+* Generative AI Tools: GitHub Copilot, Microsoft Copilot, Cursor, Lovable
 
 ---
 
 ## Education
 
-**M.Sc. Electronic Media**
+M.Sc. Electronic Media
 *Pondicherry University, 2013–2015*
 
-**B.A. Mass Communication**
+B.A. Mass Communication
 *Osmania University, 2010–2013*
