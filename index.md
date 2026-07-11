@@ -2,9 +2,9 @@
 layout: default
 ---
 
-Write to me at vidwanreddy.p@gmail.com
-Call me on +91 9513681888
-[My LinkedIn Profile](https://www.linkedin.com/in/vidwan-reddy/)
+- Write to me at vidwanreddy.p@gmail.com
+- Call me on +91 9513681888
+- [My LinkedIn Profile](https://www.linkedin.com/in/vidwan-reddy/)
 
 
 
