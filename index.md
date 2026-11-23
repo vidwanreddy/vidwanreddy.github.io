@@ -17,7 +17,7 @@ At Amdocs, I focus on maintaining and improving technical documentation for MPDK
 
 
 ## Key Projects - AI Automation and Writing Workflow Innovations
-- _Amdocs Linter_ - VS Code Extension: A Visual Studio Code extension that flags Markdown formatting issues per Amdocs style guidelines in real time and allows users to fix them using GitHub Copilot. 
+- _Amdocs Linter_ - VS Code Extension: A Visual Studio Code extension that flags Markdown formatting issues per Amdocs style guidelines in real time and allows users to fix them using GitHub Copilot. Read my linter story [here](linter-story.md).
 
 - _Capability Index Updater_ - A Flask-based web application with a responsive UI that identifies whether a capability is new, updated, or removed in a repository by parsing information across two other repositories. 
 
