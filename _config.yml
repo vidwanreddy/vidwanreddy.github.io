@@ -1,4 +1,5 @@
 title: Vidwan Reddy | Technical Writer
 description:
 theme: minima
-header_pages: []
+header_pages: 
+  - linter-story.md
