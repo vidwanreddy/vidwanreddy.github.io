@@ -1,3 +1,9 @@
+---
+layout: default
+title: Linter Story
+permalink: /linter-story/
+---
+
 # From "push, push, push" to 16 Rules: The Story of a Markdown Linter I Built for My Docs Team
 
 Every technical writer knows the feeling. You've finished a page, the content is solid, and then the review comes back with fifteen comments, none of them about the content. "Add a blank line before this image." "This list needs three spaces after the asterisk, not one." "This note block isn't indented correctly, so it won't render." "This link is broken."
