@@ -87,7 +87,7 @@ That last one taught me the most. A linter that cries wolf trains people to igno
 
 ## Someone else's pull request
 
-On 8 October 2025, a teammate opened a pull request that improved how internal links were validated. It was a small change, one file, but it meant a lot to me. Until then this was my side project. After that it was *our* tool. Someone had cared enough to read the code, find the rough edges, and fix them. It was also quiet proof that AI-written code could can take contributors.
+On 8 October 2025, a teammate opened a pull request that improved how internal links were validated. It was a small change, one file, but it meant a lot to me. Until then this was my side project. After that it was *our* tool. Someone had cared enough to read the code, find the rough edges, and fix them. It was also quiet proof that AI-written code can take contributors.
 
 ## Thinking at the level of the whole site
 
@@ -141,6 +141,6 @@ Versions 1.1.0, 1.2.0 and 1.3.0 all went out on 21 May. They added auto-update, 
 3.  **Keep a file of bad examples.** It's your test suite, your spec and your demo all at once.
 4.  **Delete rules without regret.** A redundant or subjective rule makes every other rule less trustworthy.
 5.  **Write down your conventions.** Future you, your teammates and your AI assistant all benefit.
-6.  **Solve distribution early.** The best rule in the world doesn't help someone running last year's version.
+6.  **Solve distribution early.** It doesn't help if someone running last year's version.
 
 It started with three commits called `push`. It's still growing, and I'm still writing commit messages I'm not proud of.
