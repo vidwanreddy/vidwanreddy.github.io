@@ -7,8 +7,8 @@ title: Home
 
 I'm Vidwan Reddy, a technical writer. Choose a page to explore:
 
-- [View my resume](resume.md)
-- [Read my linter story](linter-story.md)
+- [The boring resume](resume.md)
+- [I Don't Know How to Code. I Built a VS Code Extension Anyway.](linter-story.md)
 
 - Write to me at vidwanreddy.p@gmail.com
 - Call me on +91 9513681888
