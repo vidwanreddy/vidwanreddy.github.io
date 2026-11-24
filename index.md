@@ -10,11 +10,7 @@ layout: default
 
 ## About
 
-With over five years of experience in technical communication, I specialize in creating high-quality developer documentation that empowers teams and drives product engagement. As a Technical Publications Professional at Amdocs, I contribute to the TechPubs team by leveraging AI-powered tools to streamline documentation workflows, enhance content consistency, and support the organization's mission of delivering cutting-edge technology solutions. My work is fueled by a commitment to clarity, efficiency, and innovation, ensuring that our documentation meets the evolving needs of developers and stakeholders.  
-
-At Amdocs, I focus on maintaining and improving technical documentation for MPDK and Observability products. Collaborating with cross-functional teams, I implement AI-assisted tools to accelerate content development while upholding quality. My role emphasizes fostering collaboration, standardizing technical guides, and aligning documentation with product goals to enhance user experiences and accelerate product adoption.
-
-
+With over five years of experience in technical communication, I specialize in creating high-quality developer documentation that empowers teams and drives product engagement. As a Technical Publications Professional at Amdocs, I contribute to the TechPubs team by leveraging AI-powered tools to streamline documentation workflows, enhance content consistency, and support the organization's mission of delivering cutting-edge technology solutions. I primarily focus on maintaining and improving technical documentation for MPDK and Observability products.
 
 ## Key Projects - AI Automation and Writing Workflow Innovations
 - _Amdocs Linter_ - VS Code Extension: A Visual Studio Code extension that flags Markdown formatting issues per Amdocs style guidelines in real time and allows users to fix them using GitHub Copilot. Read my linter story [here](linter-story.md).
