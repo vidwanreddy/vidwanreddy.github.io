@@ -8,7 +8,7 @@ permalink: /linter-story/
 
 Every technical writer knows the feeling. You've finished a page, the content is solid, and then the review comes back with fifteen comments, none of them about the content. "Add a blank line before this image." "This list needs three spaces after the asterisk, not one." "This note block isn't indented correctly, so it won't render." "This link is broken."
 
-I spent a lot of time writing those comments, and receiving them. Eventually I decided a machine should do it instead. This is the story of how a weekend experiment became a VS Code extension that, by our estimate, saves a writer about 15 minutes of manual checking on every page.
+I spent a lot of time writing those comments, and receiving them. Eventually I decided a machine should do it instead. This is the story of how a weekend experiment became a VS Code extension that, by my estimate, saves a writer about 5 minutes of manual checking on every page.
 
 There's one thing you should know up front: I'm a technical writer, and I don't know how to code. I've never written TypeScript, and I couldn't have written a single rule in this extension by hand. All of it was vibe coded. I described what I wanted in plain English, first to GitHub Copilot and later to Cursor, and the AI wrote the code. I tested it against real documents and kept asking until it was right.
 
