@@ -7,7 +7,7 @@ title: Home
 
 I'm Vidwan Reddy, a technical writer. Choose a page to explore:
 
-- [View my CV](resume.md)
+- [View my resume](resume.md)
 - [Read my linter story](linter-story.md)
 
 - Write to me at vidwanreddy.p@gmail.com
