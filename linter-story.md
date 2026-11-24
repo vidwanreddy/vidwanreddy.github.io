@@ -87,7 +87,7 @@ That last one taught me the most. A linter that cries wolf trains people to igno
 
 ## Someone else's pull request
 
-On 8 October 2025, a teammate opened a pull request that improved how internal links were validated. It was a small change, one file, but it meant a lot to me. Until then this was my side project. After that it was *our* tool. Someone had cared enough to read the code, find the rough edges, and fix them. It was also quiet proof that AI-written code could hold up to a colleague's review.
+On 8 October 2025, a teammate opened a pull request that improved how internal links were validated. It was a small change, one file, but it meant a lot to me. Until then this was my side project. After that it was *our* tool. Someone had cared enough to read the code, find the rough edges, and fix them. It was also quiet proof that AI-written code could can take contributors.
 
 ## Thinking at the level of the whole site
 
