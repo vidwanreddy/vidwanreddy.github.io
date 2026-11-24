@@ -1,6 +1,4 @@
 title: 
 description:
 theme: minima
-header_pages: 
-  - resume.md
-  - linter-story.md
+header_pages:
