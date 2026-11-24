@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Linter Story
+title: I Don't Know How to Code. I Built a VS Code Extension Anyway.
 permalink: /linter-story/
 ---
 
